@@ -1,26 +1,32 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,30&height=250&section=header&text=Hi,%20I'm%20Anas%20Jameel&fontSize=70&fontColor=ffffff&fontAlignY=35&animation=fadeIn&desc=AI%20and%20Software%20Engineer%20|%20Solo%20Dev&descAlignY=60&descAlign=62&font=Fira%20Code" width="100%" alt="Header"/>
-</div>
+  <img src="assets/portrait.svg" alt="Anas Jameel Dot-Matrix Portrait" width="340" />
+  
+  <br /><br />
 
-<div align="center">
+  # Anas Jameel
+  
+  <div align="center">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=FFFFFF&center=true&vCenter=true&width=500&height=36&lines=Software%20Engineer%20%7C%20Solo%20Dev;React%20Native%20Specialist;Deep%20Learning%20%26%20Model%20Training;Shipping%20Apps%20To%20Production" alt="Typing Subtitle" />
+  </div>
 
   ### 🚀 Shipping Apps & Training Models
   
   **Solo Developer • React Native Specialist • AI Enthusiast**
 
-  <a href="https://www.linkedin.com/in/anas-jameel-167s/">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" height="30" />
+  <br />
+
+  <a href="https://www.linkedin.com/in/anas-jameel-167s/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-161b22?style=for-the-badge&logo=linkedin&logoColor=ffffff" height="28" alt="LinkedIn"/>
   </a>
   &nbsp;
-  <a href="https://x.com/AnasJameel300">
-    <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" height="30" />
+  <a href="https://x.com/AnasJameel300" target="_blank">
+    <img src="https://img.shields.io/badge/X-161b22?style=for-the-badge&logo=x&logoColor=ffffff" height="28" alt="X"/>
   </a>
   &nbsp;
-  <a href="mailto:anasjameel300@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" height="30" />
+  <a href="mailto:anasjameel300@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/Email-161b22?style=for-the-badge&logo=gmail&logoColor=ffffff" height="28" alt="Email"/>
   </a>
-  
-  <br /> <br />
+
 </div>
 
 ---
@@ -36,25 +42,51 @@ I'm a **Software Engineer** who prefers shipping products over just writing code
 
 ---
 
-### 🛠️ Tech Stack
+### 📡 Technical Capability & Skills Radar
+
+<div align="center">
+  <img src="assets/skills.svg" alt="Technical Capability & Skill Radar" width="100%" />
+</div>
+
+
+---
+
+### 🛠️ Core Tooling & Technologies
 
 <div align="center">
 
 | **Category** | **Technologies** |
 | :--- | :--- |
-| **Mobile & App Dev** | <img src="https://skillicons.dev/icons?i=react,kotlin,flutter,android,expo" /> |
-| **Web Development** | <img src="https://skillicons.dev/icons?i=nextjs,ts,vite,tailwind,html,css" /> |
-| **AI & Python** | <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,jupyter" /> |
-| **Tools & Platforms** | <img src="https://skillicons.dev/icons?i=git,github,vscode,windows" /> |
+| **Mobile & App Dev** | <img src="https://skillicons.dev/icons?i=react,kotlin,flutter,android,expo&theme=dark" /> |
+| **Web Development** | <img src="https://skillicons.dev/icons?i=nextjs,ts,vite,tailwind,html,css&theme=dark" /> |
+| **AI & Python** | <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,jupyter&theme=dark" /> |
+| **Tools & Platforms** | <img src="https://skillicons.dev/icons?i=git,github,vscode,windows&theme=dark" /> |
 
 </div>
 
 ---
 
-### ⚡ Current Stats
+### 📈 Activity & Contribution Flow
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=anasjameel300&theme=react&hide_border=true&background=0D1117&date_format=M%20j%5B%2C%20Y%5D" alt="Anas's Streak" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=anasjameel300&theme=github-compact&bg_color=0d1117&color=ffffff&line=ffffff&point=8b949e&area=true&hide_border=true" alt="Contribution Graph" width="100%" />
+</div>
+
+---
+
+### ⚡ GitHub Performance & Languages
+
+<div align="center">
+  <table border="0" style="border: none; border-collapse: collapse; width: 100%;">
+    <tr style="border: none;">
+      <td width="50%" align="center" style="border: none; padding: 4px;">
+        <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=anasjameel300&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=ffffff&text_color=8b949e&icon_color=ffffff&include_all_commits=true" alt="GitHub Stats" width="100%" />
+      </td>
+      <td width="50%" align="center" style="border: none; padding: 4px;">
+        <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=anasjameel300&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=ffffff&text_color=8b949e&hide=Jupyter%20Notebook" alt="Top Languages" width="100%" />
+      </td>
+    </tr>
+  </table>
 </div>
 
 ---
@@ -63,9 +95,9 @@ I'm a **Software Engineer** who prefers shipping products over just writing code
 
 I'm not just a code machine. When the IDE closes, here is who I am:
 
-* ⚔️ **Current Obsession:** Hunting monsters in *The Witcher 3: Wild Hunt*.
-* ⌚ **Tinkering:** I build custom mechanical watches—because debugging tiny gears is just as hard as debugging code.
-* 🤖 **Philosophy:** I believe in using AI to amplify developer productivity, not replace creativity.
+* **⚔️ Current Obsession:** Hunting monsters in *The Witcher 3: Wild Hunt*.
+* **⌚ Tinkering:** I build custom mechanical watches—because debugging tiny gears is just as hard as debugging code.
+* **🤖 Philosophy:** I believe in using AI to amplify developer productivity, not replace creativity.
 
 ---
 
