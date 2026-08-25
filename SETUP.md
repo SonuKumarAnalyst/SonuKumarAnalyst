@@ -49,6 +49,23 @@ tech_stack:
   - category: "Category Name"
     icons: "react,python,typescript"
 
+# Customises the 2x2 Bento Engineering Showcase
+bento:
+  production_focus:
+    - title: "📱 What You Build"
+      desc: "Short description of your primary output"
+    - title: "🧠 Technical Focus"
+      desc: "Your core technical domain"
+    - title: "🌐 Stack"
+      desc: "Your primary stack and tools"
+  milestones:
+    - badge: "🏆 Achievement One"
+      desc: "Brief description"
+    - badge: "🚀 Achievement Two"
+      desc: "Brief description"
+    - badge: "🔄 Achievement Three"
+      desc: "Brief description"
+
 # Portrait rendering settings
 portrait:
   source_image: "assets/source-photo.jpg"
@@ -84,7 +101,7 @@ git push origin main
 
 You only ever run **one command**: `python scripts/generate_portrait.py`
 
-It automatically chains all 4 scripts in order:
+It automatically chains all 5 scripts in order:
 
 ```
 config.yml + source-photo.jpg
@@ -99,6 +116,16 @@ config.yml + source-photo.jpg
 │  generate_skills_svg.py  │  Reads skills: from config.yml →
 │                          │  generates animated radar chart SVG
 └──────────┬───────────────┘
+           │ calls ▼
+┌──────────────────────────────┐
+│ generate_contributions_svg.py│  Fetches live contributions from GitHub →
+│                              │  generates animated activity flow SVG
+└──────────┬───────────────────┘
+           │ calls ▼
+┌──────────────────────────────┐
+│ generate_bento_svg.py        │  Native GitHub metrics + milestones →
+│                              │  generates 2x2 Bento Showcase SVG
+└──────────┬───────────────────┘
            │ calls ▼
 ┌──────────────────────────┐
 │  render_readme.py        │  Fills {{ placeholders }} in the template
@@ -136,33 +163,37 @@ After any change, just rerun: `python scripts/generate_portrait.py`
 
 ```
 your-username/
-├── config.yml                  # ← EDIT THIS to personalize everything
+├── config.yml                      # ← EDIT THIS to personalize everything
 ├── assets/
-│   ├── source-photo.jpg        # ← DROP YOUR PHOTO HERE (gitignored, stays local)
-│   ├── portrait.svg            # Auto-generated dot-matrix portrait
-│   └── skills.svg              # Auto-generated skill radar chart
+│   ├── source-photo.jpg            # ← DROP YOUR PHOTO HERE (gitignored, stays local)
+│   ├── portrait.svg                # Auto-generated dot-matrix portrait
+│   ├── skills.svg                  # Auto-generated skill radar chart
+│   ├── contributions.svg           # Auto-generated live activity flow
+│   └── bento.svg                   # Auto-generated 2x2 Bento Showcase
 ├── templates/
-│   └── README.template.md      # Layout template (don't edit)
+│   └── README.template.md          # Layout template (don't edit)
 ├── scripts/
-│   ├── generate_portrait.py    # Entry point — runs everything
-│   ├── generate_skills_svg.py  # Generates skill radar from config
-│   ├── render_readme.py        # Fills template → README.md
-│   └── preview.py              # Generates local preview HTML
-├── README.md                   # Auto-generated (don't edit directly)
-├── requirements.txt            # Python dependencies
-├── SETUP.md                    # This guide
-└── .gitignore                  # Excludes preview.html, source photo, cache
+│   ├── generate_portrait.py        # Entry point — runs all generators
+│   ├── generate_skills_svg.py      # Generates skill radar from config
+│   ├── generate_contributions_svg.py# Generates live contribution graph
+│   ├── generate_bento_svg.py       # Generates 2x2 Bento Showcase
+│   ├── render_readme.py            # Fills template → README.md
+│   └── preview.py                  # Generates local preview HTML
+├── README.md                       # Auto-generated (don't edit directly)
+├── requirements.txt                # Python dependencies
+├── SETUP.md                        # This guide
+└── .gitignore                      # Excludes preview.html, source photo, cache
 ```
 
 ---
 
 ## ❓ FAQ
 
-**Q: The stats card shows fewer commits than my GitHub dashboard.**
-> The card counts only **public repository** commits. Your dashboard includes private repos, issues, PR reviews, and discussions. To show everything, self-host the stats card with a GitHub Personal Access Token.
+**Q: Where does the contribution data come from?**
+> Everything is pulled directly from GitHub's own native contribution calendar and public API — not from any third-party Vercel proxy. This means zero rate limits, zero HTTP 402 payment errors, and 100% uptime.
 
-**Q: Can I hide a language from "Top Languages"?**
-> Yes. In `templates/README.template.md`, add `&hide=Language%20Name` to the top-langs URL. Jupyter Notebook is hidden by default because `.ipynb` files inflate byte counts.
+**Q: Can I change which languages appear in the Bento Language Spectrum?**
+> The language data comes from your actual public repositories via the GitHub API — it reflects real bytes of code. Jupyter Notebook (`.ipynb`) is excluded by default because its JSON cell output bloats byte counts artificially. If you want to manually adjust the `lang_totals` fallback, edit `scripts/generate_bento_svg.py` lines 40–45.
 
 **Q: The preview shows broken images.**
 > Run `python scripts/preview.py` to regenerate it. The preview embeds all SVGs as base64 so it works offline.

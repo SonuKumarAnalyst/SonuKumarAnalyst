@@ -24,6 +24,17 @@ except ImportError:
     from scripts.generate_skills_svg import generate_skills_svg
 
 
+try:
+    from generate_contributions_svg import generate_contributions_svg
+except ImportError:
+    from scripts.generate_contributions_svg import generate_contributions_svg
+
+try:
+    from generate_bento_svg import generate_bento_svg
+except ImportError:
+    from scripts.generate_bento_svg import generate_bento_svg
+
+
 def load_config(config_path="config.yml"):
     default_config = {
         "github_username": "octocat",
@@ -275,4 +286,6 @@ if __name__ == "__main__":
     cfg = load_config()
     generate_crystal_portrait(cfg)
     generate_skills_svg()
+    generate_contributions_svg()
+    generate_bento_svg()
     render_readme()

@@ -24,6 +24,16 @@ try:
 except ImportError:
     from scripts.generate_skills_svg import generate_skills_svg
 
+try:
+    from generate_contributions_svg import generate_contributions_svg
+except ImportError:
+    from scripts.generate_contributions_svg import generate_contributions_svg
+
+try:
+    from generate_bento_svg import generate_bento_svg
+except ImportError:
+    from scripts.generate_bento_svg import generate_bento_svg
+
 
 def _load_display_name():
     if os.path.exists("config.yml"):
@@ -35,6 +45,8 @@ def _load_display_name():
 
 def generate_preview_html():
     generate_skills_svg()
+    generate_contributions_svg()
+    generate_bento_svg()
     render_readme()
 
     if not os.path.exists("README.md"):
@@ -48,7 +60,7 @@ def generate_preview_html():
     html_body = md_content
 
     # Embed local SVGs as base64 data-uris so they render in file:// without browser CORS blocks
-    for asset_path in ["assets/portrait.svg", "assets/skills.svg", "assets/snake.svg"]:
+    for asset_path in ["assets/portrait.svg", "assets/skills.svg", "assets/contributions.svg", "assets/bento.svg"]:
         if os.path.exists(asset_path):
             with open(asset_path, "rb") as svg_f:
                 b64_str = base64.b64encode(svg_f.read()).decode("utf-8")

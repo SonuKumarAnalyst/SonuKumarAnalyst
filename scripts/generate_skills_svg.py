@@ -39,12 +39,12 @@ def generate_skills_svg(config_path="config.yml", output_path="assets/skills.svg
             "category": html.escape(str(s.get("category", "General")))
         })
 
-    width = 920
-    height = 360
+    width = 940
+    height = 370
     
-    rcx = 225
-    rcy = 195
-    max_r = 105
+    rcx = 245
+    rcy = 215
+    max_r = 95
     
     num_skills = len(skills_data)
     angle_step = (2 * math.pi) / max(1, num_skills)
@@ -88,13 +88,13 @@ def generate_skills_svg(config_path="config.yml", output_path="assets/skills.svg
             f'fill="#ffffff" stroke="#0d1117" stroke-width="1.5" style="animation-delay: {vertex_delay:.2f}s;"/>'
         )
         
-        lx = rcx + (max_r + 24) * math.cos(angle)
-        ly = rcy + (max_r + 22) * math.sin(angle)
+        lx = rcx + (max_r + 18) * math.cos(angle)
+        ly = rcy + (max_r + 16) * math.sin(angle)
         
         anchor = "middle"
-        if math.cos(angle) > 0.3:
+        if math.cos(angle) > 0.25:
             anchor = "start"
-        elif math.cos(angle) < -0.3:
+        elif math.cos(angle) < -0.25:
             anchor = "end"
             
         labels_svg.append(
@@ -111,9 +111,9 @@ def generate_skills_svg(config_path="config.yml", output_path="assets/skills.svg
 
     # Right: Proficiency Progress HUD
     bars_svg = []
-    hud_start_x = 460
-    hud_start_y = 90
-    bar_width = 410
+    hud_start_x = 480
+    hud_start_y = 95
+    bar_width = 415
     
     top_skills = sorted(skills_data, key=lambda s: s.get("level", 0), reverse=True)[:6]
     
@@ -204,7 +204,7 @@ def generate_skills_svg(config_path="config.yml", output_path="assets/skills.svg
   </g>
 
   <!-- Center Divider -->
-  <line x1="435" y1="80" x2="435" y2="330" stroke="#21262d" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="455" y1="80" x2="455" y2="340" stroke="#21262d" stroke-width="1" stroke-dasharray="4,4"/>
 
   <!-- Right: Proficiency Progress HUD -->
   <g>
@@ -215,7 +215,7 @@ def generate_skills_svg(config_path="config.yml", output_path="assets/skills.svg
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(svg_content)
-    print(f"[Skills HUD] Saved animated XML SVG with adjusted margins to {output_path}")
+    print(f"[Skills HUD] Saved animated XML SVG with perfected clearance to {output_path}")
 
 
 if __name__ == "__main__":

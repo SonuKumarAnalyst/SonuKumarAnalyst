@@ -72,6 +72,22 @@ human_side:
   - title: "🤖 Philosophy"
     desc: "I believe in using AI to amplify developer productivity, not replace creativity."
 
+bento:
+  production_focus:
+    - title: "📱 Mobile Ecosystems"
+      desc: "Production React Native & Android Play Store apps"
+    - title: "🧠 Deep Learning & AI"
+      desc: "PyTorch model training, fine-tuning & inference"
+    - title: "🌐 Modern Full-Stack"
+      desc: "Next.js, TypeScript & performant cloud APIs"
+  milestones:
+    - badge: "🏆 SIH Hackathon"
+      desc: "Shortlisted for Smart India Hackathon"
+    - badge: "🚀 Play Store Delivery"
+      desc: "Shipped & maintained production Android apps"
+    - badge: "🔄 Stack Migration"
+      desc: "Kotlin Android codebase to React Native & Web"
+
 footer_text: "Let's build something incredible together."
 
 portrait:
@@ -82,3 +98,4 @@ portrait:
   duotone_light: "#ffffff"  # highlight in duotone/monochrome
   duotone_dark: "#161b22"   # background in duotone/monochrome
   reveal_style: "rows"      # "rows" | "columns" | "diagonal"
+
