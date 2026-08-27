@@ -97,7 +97,30 @@ git push origin main
 
 ---
 
-## 🔄 How the Automation Works
+## ⚡ Live Auto-Updates vs. Static (Optional)
+
+By default, your profile is **static** — the SVGs capture your metrics at the time of generation.
+
+* **Option A: Manual Updates (Default — no setup required)**:
+  Whenever you push new code or want to refresh your numbers, simply re-run:
+  ```bash
+  python scripts/generate_portrait.py
+  git add assets/ README.md config.yml
+  git commit -m "chore: refresh profile metrics"
+  git push origin main
+  ```
+
+* **Option B: Automatic Background Updates (GitHub Actions — 100% Free)**:
+  The repository already comes with `.github/workflows/update-profile.yml` pre-configured. To enable it so GitHub automatically refreshes your contribution graph and telemetry every 12 hours:
+  1. In your repository on GitHub, go to **Settings** → **Actions** → **General**.
+  2. Under **Workflow permissions**, select **"Read and write permissions"** and click **Save**.
+  3. Go to the **Actions** tab on GitHub and click **"I understand my workflows, go ahead and enable them"** (if prompted).
+  
+  *That's it! GitHub will now auto-update your stats twice daily in the background. If you prefer to keep everything manual, you don't need to do anything at all.*
+
+---
+
+## 🔄 How the Generator Works
 
 You only ever run **one command**: `python scripts/generate_portrait.py`
 
