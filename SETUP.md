@@ -163,6 +163,9 @@ After any change, just rerun: `python scripts/generate_portrait.py`
 
 ```
 your-username/
+├── .github/
+│   └── workflows/
+│       └── update-profile.yml      # Auto-refreshes metrics on a schedule (every 12h)
 ├── config.yml                      # ← EDIT THIS to personalize everything
 ├── assets/
 │   ├── source-photo.jpg            # ← DROP YOUR PHOTO HERE (gitignored, stays local)
@@ -189,6 +192,9 @@ your-username/
 
 ## ❓ FAQ
 
+**Q: Does my profile update automatically when I push new code to other repos?**
+> Yes! The included GitHub Actions workflow (`update-profile.yml`) runs automatically every 12 hours (and whenever you edit `config.yml`) to fetch your latest contribution calendar and metrics, updating the SVGs in your repository with zero manual work. You can also trigger an instant refresh anytime from the **Actions** tab by clicking **Run workflow**.
+
 **Q: Where does the contribution data come from?**
 > Everything is pulled directly from GitHub's own native contribution calendar and public API — not from any third-party Vercel proxy. This means zero rate limits, zero HTTP 402 payment errors, and 100% uptime.
 
@@ -200,3 +206,4 @@ your-username/
 
 **Q: Do I need to edit any Python files or the template?**
 > No. Everything is driven by `config.yml`. The scripts and template are generic — they work for any user without modification.
+
