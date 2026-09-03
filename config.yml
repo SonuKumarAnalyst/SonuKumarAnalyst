@@ -1,0 +1,157 @@
+# ==============================================================================
+# Profile Configuration
+# Edit this single file to personalize your entire GitHub Profile!
+# ==============================================================================
+
+github_username: "SonuKumarAnalyst"
+display_name: "Sonu Kumar"
+headline: "📊 Turning Data Into Insights"
+tagline: "Data Analyst • Power BI Specialist • AI & ML Enthusiast"
+
+typing_lines:
+  - "Data Analyst | Turning Data Into Insights"
+  - "Power BI & Data Visualization"
+  - "SQL • Python • Excel"
+  - "Exploring AI & Machine Learning"
+  - "Building Data-Driven Solutions"
+
+bio: |
+  I'm a **Data Analyst** passionate about turning raw data into meaningful insights and
+  building dashboards that help people make better decisions.
+
+  * 📊 **Analytics:** Working with **SQL, Python, Excel, and Power BI** to explore and analyze data.
+  * 📈 **Visualization:** Creating interactive **Power BI dashboards** and clear data visualizations.
+  * 🧠 **AI & ML:** Exploring **Machine Learning and Deep Learning** to solve real-world problems.
+  * 🔍 **Problem Solving:** Interested in discovering patterns, trends, and actionable insights from data.
+  * 🚀 **Projects:** Building practical data analytics projects and continuously improving my technical skills.
+
+links:
+  linkedin: "https://www.linkedin.com/in/sonu-kumar-analyst"
+  email: "sonukumarsk5168@gmail.com"
+
+skills:
+  - name: "Power BI"
+    level: 90
+    category: "Data Analytics"
+
+  - name: "SQL"
+    level: 88
+    category: "Data Analytics"
+
+  - name: "Python"
+    level: 85
+    category: "Data Analytics"
+
+  - name: "Excel"
+    level: 85
+    category: "Data Analytics"
+
+  - name: "Data Visualization"
+    level: 88
+    category: "Data Analytics"
+
+  - name: "Pandas / NumPy"
+    level: 82
+    category: "Data Analytics"
+
+  - name: "Statistics"
+    level: 78
+    category: "Data Analytics"
+
+  - name: "Machine Learning"
+    level: 75
+    category: "AI / ML"
+
+  - name: "Deep Learning"
+    level: 70
+    category: "AI / ML"
+
+  - name: "Python / PyTorch"
+    level: 78
+    category: "AI / ML"
+
+  - name: "Model Deployment"
+    level: 68
+    category: "AI / ML"
+
+  - name: "React Native"
+    level: 88
+    category: "Mobile"
+
+  - name: "Next.js / React"
+    level: 84
+    category: "Web"
+
+  - name: "TypeScript"
+    level: 82
+    category: "Web"
+
+  - name: "Kotlin / Android"
+    level: 74
+    category: "Mobile"
+
+  - name: "Git & CI/CD"
+    level: 85
+    category: "DevOps"
+
+tech_stack:
+  - category: "Data Analytics & BI"
+    icons: "mysql,postgresql,python,scikitlearn"
+
+  - category: "Python & Data Science"
+    icons: "python,jupyter"
+
+  - category: "AI & Machine Learning"
+    icons: "pytorch,tensorflow,python"
+
+  - category: "Mobile & App Dev"
+    icons: "react,kotlin,flutter,android,expo"
+
+  - category: "Web Development"
+    icons: "nextjs,ts,vite,tailwind,html,css"
+
+  - category: "Tools & Platforms"
+    icons: "git,github,vscode,windows"
+
+human_side:
+  - title: "📊 Data Mindset"
+    desc: "I enjoy finding patterns, trends and insights hidden inside data."
+
+  - title: "🧠 Continuous Learning"
+    desc: "Always exploring new tools, technologies and better ways to solve problems."
+
+  - title: "🤖 AI Philosophy"
+    desc: "I believe AI should amplify human creativity, productivity and decision-making."
+
+bento:
+  production_focus:
+    - title: "📊 Data Analytics"
+      desc: "Turning raw data into meaningful insights using SQL, Python, Excel & Power BI"
+
+    - title: "📈 Interactive Dashboards"
+      desc: "Building insightful Power BI dashboards and data visualizations for better decision-making"
+
+    - title: "🧠 AI & Machine Learning"
+      desc: "Exploring Machine Learning, Deep Learning and model training with Python & PyTorch"
+
+  milestones:
+    - badge: "🏆 SIH Hackathon"
+      desc: "Shortlisted for Smart India Hackathon"
+
+    - badge: "📊 Data Projects"
+      desc: "Building practical analytics projects using SQL, Python & Power BI"
+
+    - badge: "🚀 Full-Stack Background"
+      desc: "Experience with React Native, Next.js, TypeScript and modern development tools"
+
+footer_text: "Turning data into insights, ideas into solutions. 🚀"
+
+portrait:
+  source_image: "assets/source-photo.jpg"
+  grid_spacing_px: 8        # fine grid for high fidelity
+  canvas_size_px: 1000      # canvas resolution in pixels
+  color_palette: "original" # "original", "monochrome", or "duotone"
+  duotone_light: "#ffffff"  # highlight in duotone/monochrome
+  duotone_dark: "#161b22"   # background in duotone/monochrome
+  reveal_style: "rows"      # "rows" | "columns" | "diagonal"
+
